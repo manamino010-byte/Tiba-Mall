@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فرع طيبة جراند مول | 6 أكتوبر</title>
+  <meta name="description" content="بيانات العقار المستأجر حالياً (فرع طيبة جراند مول)، المعروض للبيع من قِبَل المالك. مساحة 65.5 م²، السعر 11,000,000 ج.">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">
+        <img src="images/Logo.jpeg" alt="أوتو بارتس" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+        <span style="display:none;font-weight:800;font-size:1.2rem">أوتو بارتس</span>
+      </a>
+      <button id="langToggle" class="lang-toggle" aria-label="تغيير اللغة">
+        <i class="fa-solid fa-globe"></i>
+        <span id="langLabel">عر</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="top" class="hero">
+    <div class="hero-overlay"></div>
+    <img class="hero-bg" src="images/interior7.JPG" alt="واجهة فرع أوتو بارتس">
+    <div class="hero-content reveal">
+      <h1 class="sr-only" data-i18n="hero-h1">أوتو بارتس - فرع طيبة جراند مول</h1>
+      <p class="hero-tag" data-i18n="hero-tag">فرع طيبة جراند مول</p>
+
+      <div class="hero-nav-grid">
+        <a href="#details" class="hero-nav-card">
+          <i class="fa-solid fa-store"></i>
+          <span class="hnc-title" data-i18n="nav-details">تفاصيل الفرع</span>
+          <span class="hnc-desc" data-i18n="hnc-details">مساحة، عقد، وسعر الوحدة</span>
+        </a>
+        <a href="#market-data" class="hero-nav-card">
+          <i class="fa-solid fa-chart-bar"></i>
+          <span class="hnc-title" data-i18n="nav-market">بيانات السوق</span>
+          <span class="hnc-desc" data-i18n="hnc-market">وحدات مجاورة للمقارنة</span>
+        </a>
+        <a href="#location" class="hero-nav-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="hnc-title" data-i18n="nav-location">الموقع</span>
+          <span class="hnc-desc" data-i18n="hnc-location">خريطة تفاعلية وعنوان تفصيلي</span>
+        </a>
+        <a href="#video-tour" class="hero-nav-card">
+          <i class="fa-solid fa-circle-play"></i>
+          <span class="hnc-title" data-i18n="nav-video">فيديو توضيحي</span>
+          <span class="hnc-desc" data-i18n="hnc-video">جولة مرئية للفرع والمحيط</span>
+        </a>
+        <a href="#gallery" class="hero-nav-card">
+          <i class="fa-solid fa-images"></i>
+          <span class="hnc-title" data-i18n="nav-gallery">معرض الصور</span>
+          <span class="hnc-desc" data-i18n="hnc-gallery">داخل وخارج وتفاصيل المخزن</span>
+        </a>
+      </div>
+    </div>
+    <a href="#details" class="hero-scroll" aria-label="التمرير للأسفل">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <section id="details" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag" data-i18n="details-tag">بيانات الوحدة</p>
+      </div>
+      <div class="details-grid">
+        </div>
+        <div class="desc-box reveal">
+          <p data-i18n="details-desc">السادس من اكتوبر - المحور المركزي - طيبة جراند مول - بعد ميدان فودافون مباشرتا</p>
+          <ul class="desc-list">
+            <li data-i18n="details-li1"><i></i>وحدة تجارية رقم 5 - الواجهه الأمامية - الطابق الأرضي</li>
+            <li data-i18n="details-li2"><i></i>المساحة الأجمالية 65.5 م²</li>
+            <li data-i18n="details-li3"><i></i>القيمة الإيجارية السنوية 290,000 جنية (24,200 جنية شهريا)</li>
+            <li data-i18n="details-li4"><i></i>مدة العقد 7 سنوات - تاريخ بدايه العقد 1/7/2020 - تاريخ انتهاء العقد 30/6/2027</li>
+          </ul>
+          <div class="price-highlight">
+            <span class="ph-label" data-i18n="details-price">
+              السعر المطلوب من المالك 200,000 جنية/متر حسب الاسعار الحالية لسعر المتر لوحدات الواجهة الأمامية
+             وتم التفاوض وصولا لمبلغ 170,000 جنية/متر في حاله دفع المبلغ بالكامل كاش حسب حاجته لسرعه البيع </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET DATA SECTION -->
+  <section id="market-data" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag" data-i18n="market-tag"><i class="fa-solid fa-chart-bar"></i> الوحدات المجاورة</p>
+        <h2 class="section-title" data-i18n="market-title">الوحدات التجارية المتاحة في المنطقة</h2>
+        <p class="section-desc" data-i18n="market-desc">معلومات مستخرجة من عروض رسمية — مايو 2026 — للاطلاع</p>
+      </div>
+
+      <div class="prop-grid reveal">
+
+        <!-- وحدة ١: وسط البلد -->
+        <div class="prop-card" style="cursor: pointer;" onclick="openPropModal('westelbalad')">
+          <div class="prop-img-wrap-w">
+            <img src="images/west el balad Mall.jpg" alt="وحدة وسط البلد مول" loading="lazy">
+            <span class="prop-status prop-status--pending" data-i18n="prop1-status">تحت الإنشاء</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-title-row">
+              <div>
+                <h3 class="prop-name" data-i18n="prop1-name"> وحدة تجارية في مول وسط البلد— H-GR-C-14</h3>
+                <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> <span data-i18n="prop1-loc">مول وسط البلد قسم ثان 6 أكتوبر محافظة الجيزة</span></p>
+              </div>
+            </div>
+            <div style="margin-top:auto; font-size: 0.85rem; color: var(--primary); font-weight: bold; text-align: left;"><span data-i18n="prop-cta">عرض التفاصيل</span> <i class="fa-solid fa-arrow-left"></i></div>
+          </div>
+        </div>
+
+        <!-- وحدة ٢: ReadyParts -->
+        <div class="prop-card" style="cursor: pointer;" onclick="openPropModal('readyparts')">
+          <div class="prop-img-wrap">
+            <img src="images/readyparts.jpg" alt="محل ReadyParts" loading="lazy">
+          </div>
+          <div class="prop-body">
+            <div class="prop-title-row">
+              <div>
+                <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> <span data-i18n="prop2-loc">طيبة جراند مول</span></p>
+              </div>
+            </div>
+            <div style="margin-top:auto; font-size: 0.85rem; color: var(--primary); font-weight: bold; text-align: left;"><span data-i18n="prop-cta">عرض التفاصيل</span> <i class="fa-solid fa-arrow-left"></i></div>
+          </div>
+        </div>
+
+        <!-- وحدة ٣: محل ثالث -->
+        <div class="prop-card" style="cursor: pointer;" onclick="openPropModal('centralauto')">
+          <div class="prop-img-wrap">
+            <img src="images/111.jpeg" alt="محل سنترال أوتو" loading="lazy">
+          </div>
+          <div class="prop-body">
+            <div class="prop-title-row">
+              <div>
+                <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> <span data-i18n="prop3-loc">سنتر المختار بجوار المرور والجوازات</span></p>
+              </div>
+            </div>
+            <div style="margin-top:auto; font-size: 0.85rem; color: var(--primary); font-weight: bold; text-align: left;"><span data-i18n="prop-cta">عرض التفاصيل</span> <i class="fa-solid fa-arrow-left"></i></div>
+          </div>
+        </div>
+      </div><!-- end .prop-grid -->
+    </div>
+  </section>
+
+
+
+  <section id="location" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag" data-i18n="loc-tag">تفاصيل الموقع</p>
+        <h2 class="section-title" data-i18n="loc-title">طيبة جراند مول والمناطق المجاورة</h2>
+        <p class="section-desc" data-i18n="loc-desc">ميدان ليلة القدر — قسم ثانٍ 6 أكتوبر، محافظة الجيزة</p>
+      </div>
+      <div class="map-wrap reveal">
+        <div id="custom-map" style="height: 500px; width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); z-index: 1;"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video-tour" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-i18n="vid1-title">فيديو توضيحي للموقع</h2>
+        <p class="section-desc" data-i18n="vid1-desc">فيديو توضيحي  لتفاصيل العقار والموقع المحيط.</p>
+      </div>
+      <div class="video-container">
+        <iframe 
+          src="https://player.vimeo.com/video/1195094189?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&" 
+          frameborder="0" 
+          allow="autoplay; fullscreen; picture-in-picture" 
+          allowfullscreen>
+      </iframe>
+      </div>
+    </div>
+      <br>
+      <div class="section-header reveal">
+        <h2 class="section-title" data-i18n="vid2-title">فيديو توضيحي للفرع من الداخل</h2>
+        <p class="section-desc" data-i18n="vid2-desc">فيديو توضيحي  لتفاصيل الفرع</p>
+      </div>
+
+<div class="video-container">
+  <iframe  src="https://player.vimeo.com/video/1195094612?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&"
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+  </section>
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag" data-i18n="gallery-tag">عرض الصور</p>
+        <p class="section-desc" data-i18n="gallery-desc">صور الفرع — من الداخل والخارج ومخزن والمنطقة المحيطة</p>
+      </div>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter-all">الكل</button>
+        <button class="filter-btn" data-filter="exterior" data-i18n="filter-ext">خارجي</button>
+        <button class="filter-btn" data-filter="interior" data-i18n="filter-int">داخلي</button>
+        <button class="filter-btn" data-filter="storage" data-i18n="filter-storage">المخزن</button>
+      </div>
+      <div class="gallery-grid reveal" id="galleryGrid">
+        <div class="gallery-item" data-cat="exterior" onclick="openLightbox(this)"><img src="images/exterior.jpg" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="exterior" onclick="openLightbox(this)"><img src="images/exterior 5.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="exterior" onclick="openLightbox(this)"><img src="images/front branch.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior.jpg" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior 8.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior 12.jpg" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior roof.JPG" alt="رفوف المخزن" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior2.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior3.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior4.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/counter.png" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior7.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior9.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior inventory.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="storage" onclick="openLightbox(this)"><img src="images/inventory 10.jpg" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="storage" onclick="openLightbox(this)"><img src="images/inventory.jpg" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior6.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="interior" onclick="openLightbox(this)"><img src="images/interior5.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="storage" onclick="openLightbox(this)"><img src="images/inventory1.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="storage" onclick="openLightbox(this)"><img src="images/inventory2.JPG" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        <div class="gallery-item" data-cat="storage" onclick="openLightbox(this)"><img src="images/inventory11.jpg" alt="" loading="lazy"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="أوتو بارتس" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+        <p data-i18n="footer-slogan">أوتو بارتس — جميع قطع الغيار لجميع أنواع السيارات</p>
+      </div>
+      <div class="footer-info">
+        <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="footer-addr">طيبة جراند مول، بعد ميدان فودافون، ميدان ليلة القدر، قسم ثانٍ 6 أكتوبر، الجيزة 12563</span></p>
+        <p><i class="fa-solid fa-route"></i> <a href="https://maps.app.goo.gl/LVd8QzjNhqPe6j9m7" target="_blank" rel="noopener" style="color:var(--gray-300)"><span data-i18n="footer-maps">عرض موقع الفرع على خرائط جوجل</span></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <button class="lb-close" onclick="closeLightbox()" aria-label="إغلاق" data-i18n-aria="lb-close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-prev" onclick="lbNav(-1, event)" aria-label="السابق" data-i18n-aria="lb-prev"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lb-img-wrap">
+      <img id="lbImg" src="" alt="">
+      <p id="lbCaption" class="lb-caption"></p>
+    </div>
+    <button class="lb-next" onclick="lbNav(1, event)" aria-label="التالي" data-i18n-aria="lb-next"><i class="fa-solid fa-chevron-left"></i></button>
+  </div>
+
+  <button id="backTop" class="back-top" aria-label="العودة للأعلى" data-i18n-aria="back-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- نافذة الكروت المجاورة (Modal) -->
+  <div id="propModal" class="prop-modal" onclick="closePropModal(event)">
+    <div class="prop-modal-content">
+      <button class="prop-modal-close" onclick="closePropModal(null, true)"><i class="fa-solid fa-xmark"></i></button>
+      <div class="prop-modal-gallery">
+        <div class="pm-main-img-wrap">
+          <img id="pmImgMain" src="" alt="">
+          <iframe id="pmDocViewer" src="" allowfullscreen style="display:none; width:100%; height:100%; border:none; border-radius: var(--radius);"></iframe>
+          <span id="pmStatus" class="prop-status"></span>
+          <a id="pmDocOpenBtn" href="#" target="_blank" rel="noopener" class="pm-doc-open-btn" style="display:none;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> فتح في نافذة جديدة
+          </a>
+        </div>
+        <div class="pm-thumb-grid" id="pmThumbs">
+          <!-- Thumbs will be injected by JS -->
+        </div>
+      </div>
+      <div class="prop-modal-body">
+        <h3 id="pmName" class="prop-name" style="font-size: 1.4rem; margin-bottom: 0.5rem;"></h3>
+        <p id="pmLoc" class="prop-loc" style="font-size: 0.9rem; margin-bottom: 1.5rem;"><i class="fa-solid fa-location-dot"></i> <span></span></p>
+        
+        <div class="prop-metrics" id="pmMetrics">
+          <!-- سيتم حقن المواصفات هنا عبر الجافاسكريبت -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
